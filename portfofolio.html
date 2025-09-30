@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Luxury Portfolio of Guberan S - Web Developer, Designer & Engineer. Explore skills, projects, and resume.">
+  <meta name="author" content="Guberan S">
+  <title>GUBERAN S - Luxury Portfolio</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #0e0e0e;
+      color: #f5f5f5;
+    }
+
+    header {
+      background: #000;
+      text-align: center;
+      padding: 50px 20px 20px;
+      border-bottom: 1px solid #444;
+    }
+
+    header h1 {
+      font-size: 3em;
+      color: gold;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #ccc;
+      font-style: italic;
+      margin-top: 5px;
+    }
+
+    nav {
+      margin-top: 30px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.05em;
+      position: relative;
+      padding-bottom: 4px;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background: gold;
+      transition: width 0.3s;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 40px;
+      color: gold;
+      position: relative;
+    }
+
+    h2::after {
+      content: '';
+      width: 80px;
+      height: 3px;
+      background: gold;
+      display: block;
+      margin: 12px auto 0;
+    }
+
+    .about img {
+      width: 300px;
+      border: 5px solid gold;
+      border-radius: 10px;
+      display: block;
+      margin: 30px auto;
+      transition: transform 0.4s ease;
+    }
+
+    .about img:hover {
+      transform: scale(1.05);
+    }
+
+    .about p {
+      text-align: center;
+      font-size: 1.1em;
+      color: #ccc;
+      max-width: 700px;
+      margin: 20px auto 0;
+      line-height: 1.8;
+    }
+
+    .skills ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      list-style: none;
+    }
+
+    .skills li {
+      background: gold;
+      color: black;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .skills li:hover {
+      background: #d4af37;
+    }
+
+    .projects .project {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+    .projects img {
+      width: 100%;
+      max-width: 650px;
+      border-radius: 10px;
+      border: 2px solid gold;
+      box-shadow: 0 8px 15px rgba(255, 215, 0, 0.1);
+      transition: transform 0.4s ease;
+    }
+
+    .projects img:hover {
+      transform: scale(1.02);
+    }
+
+    .resume {
+      text-align: center;
+    }
+
+    .resume a {
+      background: gold;
+      color: black;
+      text-decoration: none;
+      padding: 14px 30px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s ease, transform 0.3s ease;
+      display: inline-block;
+    }
+
+    .resume a:hover {
+      background: #d4af37;
+      transform: translateY(-3px);
+    }
+
+    .contact {
+      text-align: center;
+      background: #111;
+      padding: 40px;
+      border-radius: 15px;
+    }
+
+    .contact p {
+      margin: 12px 0;
+      font-size: 1.05em;
+    }
+
+    .contact a {
+      color: white;
+      font-size: 1.5em;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+
+    .contact a:hover {
+      color: gold;
+    }
+
+    footer {
+      background: #000;
+      color: #888;
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 0.9em;
+    }
+
+    footer a {
+      color: gold;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      header h1 {
+        font-size: 2em;
+      }
+
+      .about img {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>GUBERAN S</h1>
+    <p>Luxury Web Developer | Designer | Engineer</p>
+    <nav role="navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main role="main">
+
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <img src="WhatsApp Image 2025-09-30 at 12.21.09_db71248f.jpg" alt="Portrait of Guberan S" />
+      <p>
+        I’m Guberan, a web developer who believes in quality, elegance, and user-centric design. I craft premium digital experiences with a keen eye for detail and luxury aesthetics.
+      </p>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+        <li>SQL</li>
+        <li>React</li>
+        <li>MongoDB</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3 style="color: #f5f5f5;">Portfolio Website</h3>
+        <p style="color: #ccc;">A luxurious personal portfolio built using only HTML and CSS with premium UI/UX styling.</p>
+        <img src="D:\web technology\pratices\Screenshot 2025-07-30 105848.png" alt="Screenshot of Guberan's portfolio project" />
+      </div>
+    </section>
+
+    <section id="resume" class="resume">
+      <h2>Resume</h2>
+      <p style="color: #ccc;">Download my updated professional resume below:</p>
+      <a href="D:\web technology\pratices\WhatsApp Image 2025-07-30 at 15.44.16_2dfaa5dd (1).pdf" download>Download Resume</a>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=senthilgubaran@gmail.com" target="_blank"> <i class="fas fa-envelope"></i></a>
+      <a href="http://www.linkedin.com/in/guberan-s-4b8702309" target="_blank">
+        <i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/gubu28"  target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 GUBERAN. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
